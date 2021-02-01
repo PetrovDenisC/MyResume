@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRezume</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RY5BM55YS8"></script>
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="scripts/pt.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- панель навигатора -->
+
+    <nav>
+        <div class="container">
+            <div class="wrepper_logo">
+                <i class="fab fa-whmcs logo">
+                    <a href="#"></a>
+                </i>                
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+            <ul class="nav_list">
+                <li class="nav_item" data-wow-duration="2s" id="nav_item_Home">
+                    <a data-page="header" href="#" class="nav_link">Home</a>
+                </li>
+                <li class="nav_item" data-wow-duration="3s" id="nav_item_About">
+                    <a data-page="about" href="#About" class="nav_link">About</a>
+                </li>
+                <li class="nav_item" data-wow-duration="4s" id="nav_item_Portfolio">
+                    <a data-page="portfolio" href="#Portfolio" class="nav_link">Portfolio</a>
+                </li>
+                <li class="nav_item  animate__fadeIn" data-wow-duration="5s" id="nav_item_Contact">
+                    <a data-page="contact" href="#Contact" class="nav_link">Contact</a>
+                </li>
+                <div class="bubble"></div>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!-- контейнер  header-->
+    <section data-index="0" class="header">
+        <header class="container">            
+            <a name="Header"></a>
+            <div class="wow animate__fadeInDown" data-wow-duration="2s">
+                <h1 class="header_h1">Hello, I'm <span class="my_name"> Denis</span> <br>
+                    i'm a front-end web developer, new one</h1>
+            </div>
+            <a href="#About" class="nav_link">
+                <button class="header_btn">my skills</button>
+            </a>    
+            <div class="canvas">
+                <canvas id="canvas"></canvas>                
+            </div>        
+        </header>
+    </section>
+
+    <!-- контейнер about -->
+    <section data-index="1" class="about">
+        <a name="About"></a>
+        <div class="container">
+            <div class="about_principe">
+                <h2 class="about_title wow animate__fadeInDown" data-wow-duration="2s">about</h2>
+                <div class="about_cards">
+                    <div class="about_card wow animate__flipInY" data-wow-duration="2s">
+                        <i class="fas fa-fighter-jet about_card_icon"></i>
+                        <h3 class="about_card_title">Fast</h3>
+                        <p class="about_card_subtitle">Fast load times and lag free interaction</p>
+                    </div>
+                    <div class="about_card wow animate__flipInY" data-wow-duration="3s">
+                        <i class="fas fa-desktop about_card_icon"></i>
+                        <h3 class="about_card_title">Responsive</h3>
+                        <p class="about_card_subtitle">Layouts will work on any device, big or small</p>
+                    </div>
+                    <div class="about_card wow animate__flipInY" data-wow-duration="4s">
+                        <i class="far fa-lightbulb about_card_icon"></i>
+                        <h3 class="about_card_title">Intuitive</h3>
+                        <p class="about_card_subtitle">Strong preference for easy to use, intuitive UX/UI.</p>
+                    </div>
+                    <div class="about_card wow animate__flipInY" data-wow-duration="5s">
+                        <i class="fab fa-d-and-d about_card_icon"></i>
+                        <h3 class="about_card_title">Dynamic</h3>
+                        <p class="about_card_subtitle">Websites don't have to be static.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_rezume">
+                <div class="rezume_card">
+                    <img src="./img/026_resize.jpg" alt="" class="rezume_card_icon">
+                    <h3 class="rezume_card_title">Me</h3>
+                    <p class="rezume_card_subtitle">These are new horizons for me.
+                        I love to develop and create something new</p>
+                </div>
+                <div class="about_skills">
+                    <ul class="skill_list">
+                        <li class="skill" id="skill_html">HTML
+                            <div class="wrepper_skill">
+                                <div class="barhtml html">90%</div>
+                            </div>
+                        </li>
+                        <li class="skill" id="skill_css">CSS
+                            <div class="wrepper_skill">
+                                <div class="barcss css">75%</div>
+                            </div>
+                        </li>
+                        <li class="skill" id="skill_JavaScript">JavaScript
+                            <div class="wrepper_skill">
+                                <div class="barJS js">30%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- контейнер portfolio -->
+    <section data-index="2" class="portfolio">
+        <a name="Portfolio"></a>
+        <div class="container">
+            <div class="portfolio_text">
+                <h2 class="portfolio_title wow animate__fadeInDown" data-wow-duration="2s">My skills</h2>
+                <p class="portfolio_subtitle">See my skills below</p>
+            </div>
+            <div class="portfolio_cards">
+                <div class="portfolio_wreaper">
+                    <div class="portfolio_card">
+                        <img src="./img/construction.png" alt="" class="portfolio_card_icon" id="portfolio_card_icon_1">
+                        <div class="portfolio_card_wrapper">
+                            <h3 class="portfolio_card_title">Bootstrap, open source toolkit</h3>
+                            <button class="portfolio_btn"><a href="../Album/1/index.html" class="">See more</a></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_card">
+                    <img src="./img/construction.png" alt="" class="portfolio_card_icon">
+                    <div class="portfolio_card_wrapper">
+                        <h3 class="portfolio_card_title">React Slider</h3>
+                        <button class="portfolio_btn"><a href="../Album/2/index.html" class="">See more</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- контейнер  contact-->
+    <section data-index="3" class="contact">
+        <a name="Contact"></a>
+        <div class="container">
+            <div class="contact_text">
+                <h2 class="contact_title wow animate__fadeInDown" data-wow-duration="2s">Contact</h2>
+
+            </div>
+            <div class="contact_card">
+                <div class="contact_card_icon">
+                    <img src="" alt="">
+                </div>
+                <p class="contact_card_text wow animate__fadeIn" data-wow-duration="5s">petrovdenisc@gmail.com<br></p>
+            </div>
+
+            <form action="" class="contact_form">
+                <input type="text" placeholder="Your name" class="contact_form_input wow animate__slideInDown"
+                    data-wow-duration="3s" id="formName">
+                <input type="text" placeholder="Your Email" class="contact_form_input wow animate__slideInLeft"
+                    data-wow-duration="3s" id="formEmail">
+                <textarea name="" cols="30" rows="10" placeholder="Write Massage"
+                    class="contact_form_input wow animate__slideInRight" data-wow-duration="3s"
+                    id="formMessage"></textarea>
+                <input type="Submit" class="contact_form_input wow animate__slideInUp" data-wow-duration="3s"
+                    id="formSubmit" value="SEND">
+            </form>
+
+        </div>
+    </section>
+
+    <!-- контейнер  footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_card_buttons">
+                <a href="https://www.linkedin.com/in/%D0%B4%D0%B5%D0%BD%D0%B8%D1%81-%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2-75800673/" class="footer_card_btn">
+                    <i class="fab fa-linkedin-in footer_card_btn_ico"></i>
+                </a>
+                <a href="" class="footer_card_btn">
+                    <i class="fab fa-facebook-f footer_card_btn_ico"></i>
+                </a>
+                <a href="" class="footer_card_btn">
+                    <i class="fab fa-twitter footer_card_btn_ico"></i>
+                </a>
+                <a href="" class="footer_card_btn">
+                    <i class="fas fa-comments footer_card_btn_ico"></i>
+                </a>
+                
+            </div>
+            <p class="footer_text">Petrov_Denis &copy; 2020</p>
+        </div>
+    </footer>
+
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script src="script.js"></script>
+    <script src="canvas.js"></script>
+
+</body>
+
+</html>
