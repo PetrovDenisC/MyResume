@@ -1,10 +1,9 @@
 class Slider extends React.Component {
     constructor(props){
         super(props);
-        this.state = { curentSlide: 0 };        
+        this.state = { curentSlide: 0 };
         this.handleNext = this.handleNext.bind(this);
         this.handlePrev = this.handlePrev.bind(this);
-        this.handleNav = this.handleNav.bind(this);
     }
 
     handleNext(){
@@ -23,25 +22,12 @@ class Slider extends React.Component {
             curentSlide: state.curentSlide -1
         }));
     }
-    handleNav(e){
-        let id=e.target.dataset.id-1;
-        if(this.state.curentSlide==id){
-            return;
-        };
-        this.setState({curentSlide:id})
-    }
-
 
     render(){
         return(
             <div className="slider">
                 <button className="left-control" onClick={this.handlePrev}></button>
                 <button className="right-control" onClick={this.handleNext}></button>
-                <div className="nav-control">
-                    {this.props.items.map(item =>(
-                        <button className="newBtn" key={item.id} data-id={item.id} onClick={this.handleNav}></button>
-                    ))}
-                </div>
                 <div className="item-list" style={{ 'transform': 'translate(-' + this.state.curentSlide*100+'%)' }}>
                     {this.props.items.map(item =>(
                         <div className="item" key={item.id}>
